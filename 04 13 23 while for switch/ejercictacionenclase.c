@@ -35,8 +35,5 @@ int main(int argc, char *argv[]) {
                     }
                     printf("La fraccion simplificada es %i / %i", a , b);
                 }
-            
-        
-    
 	return 0;
 }

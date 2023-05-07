@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <math.h>
+#include <windows.h>
+//la lista de colores para la consola de windows 
+//son: \033[0;31m rojo \033[0;32m verde \033[0;33m amarillo \033[0;34m azul \033[0;35m magenta \033[0;36m cyan \033[0;37m blanco
 
 int main(int argc, char const *argv[])
 {
     int comi = 0, alum = 0, i; //declaracion de variables enteras
+    system("cls");
+    printf("\033[0;31m");//color rojo
     float nota1, nota2, nota3, promedioalu = 0, promediocomi = 0; //declaracion de variables con decimal
     printf("Ingrese el numero de la comision: ");//se muestra por pantalla y dato que se espera
     scanf("%i", &comi); //se toma los datos ingresados por teclado y se almacena en la variable correspondiente
@@ -50,9 +55,9 @@ int main(int argc, char const *argv[])
         printf("\nImprimir datos y resultados");
         printf("\n--------------------------------------------------------------------------------------------\n");
         printf("Reporte de calificacion del estudiante: %i\n", i); //se imprime por pantalla un mensaje y los datos ingresados
-        printf("La primer  nota parcial y su porcentaje son:    %.2f     0.25\n", nota1);//se imprime por pantalla un mensaje y los datos ingresados
-        printf("La segunda nota parcial y su porcentaje son:    %.2f     0.30\n", nota2);
-        printf("La tercera nota parcial y su porcentaje son:    %.2f     0.45\n", nota3);
+        printf("La primer  nota parcial y su porcentaje son:    %.2f     \033[0;32m 0.25\n\033[0;31m", nota1);//se imprime por pantalla un mensaje y los datos ingresados
+        printf("La segunda nota parcial y su porcentaje son:    %.2f     \033[0;32m 0.30\n\033[0;31m", nota2);
+        printf("La tercera nota parcial y su porcentaje son:    %.2f     \033[0;32m 0.45\n\033[0;31m", nota3);
         nota1 = nota1 * 0.25;//se opera los datos ingresados y se guarda en otra variable para su posterior operacion
         nota2 = nota2 * 0.30;
         nota3 = nota3 * 0.45;

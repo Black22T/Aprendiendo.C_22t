@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(int argc, char const *argv[])
 {
@@ -15,6 +14,7 @@ int main(int argc, char const *argv[])
     printf("%i", mcd);
     return 0;
 }
+
 int euclides(int e, int d){
     int r=0, c;
     if (d>e)
