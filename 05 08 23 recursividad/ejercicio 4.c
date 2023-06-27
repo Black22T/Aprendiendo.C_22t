@@ -18,7 +18,6 @@ void pascal(int n)
 {
     if (n == 0)
     {
-        
         printf("1\n");
     }
     else
